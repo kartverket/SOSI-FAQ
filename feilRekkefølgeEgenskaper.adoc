@@ -9,5 +9,5 @@ Lim inn stien til den nye versjonen på din egen lokale katalog:
 
 image::./IMG/ShapeChangeJarNy.png[alt="Sti til ny ShapeChange.jar-fil"]
 
-Dersom du ikke ser det viste feltet for innliming i din plugin så kan du ha en enda eldre versjon av ShapeChangePlugin og det kan være nødvendig å innstallere en nyere plugin. Det finnes en versjon av ShapeChangePlugin med det beskrevne utseende på følgende sti: + 
+Dersom du ikke ser det viste feltet for innliming i din plugin så kan du ha en enda eldre versjon av ShapeChangePlugin og det kan være nødvendig å innstallere en nyere plugin. Det finnes en ny versjon av ShapeChangePlugin følgende sti: + 
 https://register.geonorge.no/filer/uml-verktøy/shapechange-add-in-64-bit
