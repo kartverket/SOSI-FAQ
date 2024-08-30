@@ -1,7 +1,8 @@
 // Samiske tegn vises ikke korrekt ved bruk av Enterprise Architect
 Versjon 2024-08-30
 
-Enterprise Architect bruker windows-1252 tegnsett som ikke har full støtte for alle Samiske tegn. + 
+Enterprise Architect bruker i utgangspunktet windows-1252 tegnsett ved lagring av XMI-fil til SOSI-modellregister. +
+Dette tegnsettet har ikke støtte for alle Samiske tegn. + 
 For at Enterprise Architect skal bruke UTF-8 tegnsett må man gjøre noen grep.
 
 == EA15 eller eldre
