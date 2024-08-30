@@ -1,5 +1,6 @@
 = FAQ - SVN
-Versjon 2024-08-27
+
+Versjon 2024-08-30
 
 == På denne siden finner du ofte stilte spørsmål og løsninger på kjente problemer ved bruk av Enterprise Architect og SVN.
 Hvis du opplever problemer som ikke dekkes her er det fint om du sender en tilbakemelding til standardiseringssekretariatet@kartverket.no +
