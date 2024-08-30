@@ -43,11 +43,6 @@ include::alleredeSjekketUt.adoc[]
 ====
 
 
-.EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»
-[%collapsible]
-====
-include::avhengighetsdiagrammer.adoc[]
-====
 
 .EA gir en feilmelding om at .xml fil "is not locked in this working copy" når du prøver å sjekke inn en pakke
 [%collapsible]
@@ -62,6 +57,12 @@ include::samiskeTegn.adoc[]
 ====
 
 == Enterprise Architect 15 og eldre og SVN
+
+.EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»
+[%collapsible]
+====
+include::avhengighetsdiagrammer.adoc[]
+====
 
 .Feilmelding om at prosjektfilen ikke kan åpnes når du forsøker å åpne et eksisterende prosjekt i Enterprise Architect
 [%collapsible]
