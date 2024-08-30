@@ -3,7 +3,7 @@ Versjon 2024-08-30
 
 Feilmeldingen i EA vil se ut som på bildet under.
 
-image::IMG/leserettigheter1.jpg[alt="Kun leserettighet"]
+image::IMG/leserettigheter1.JPG[alt="Kun leserettighet"]
 
 Bytt brukernavn i kommandoklienten som beskrevet nedenfor:
 
