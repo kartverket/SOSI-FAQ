@@ -1,7 +1,9 @@
 // Kan ikke sjekke ut en pakke og feilmeldingen sier "403 Forbidden"
+Versjon 2024-08-30
 
 Feilmeldingen i EA vil se ut som på bildet under.
 
-image::IMG/leserettigheter1.png[,, alt="Kun leserettighet"]
+image::./IMG/leserettigheter1.png[alt="Kun leserettighet"]
 
-Vedkommende har da antakelig bare leserettigheter. Ta kontakt med Standardiseringssekretariatet (standardiseringssekretariatet@kartverket.no) og angi hvilket fagområde du er editor for eller hvilken produktspesifikasjon du vil jobbe med, så får du tildelt eget brukernavn og passord.
+Du har da antakelig bare leserettigheter til pakka. 
+Ta kontakt med Standardiseringssekretariatet (standardiseringssekretariatet@kartverket.no) og angi hvilket fagområde du er editor for eller hvilken produktspesifikasjon du vil jobbe med, så får du tildelt eget brukernavn og passord.
