@@ -3,11 +3,11 @@ Versjon 2024-08-30
 
 ShapeChangePlugin blir vanligvis installert med en veldig tidlig versjon av ShapeChange.jar inkludert. Den versjonen av ShapeChange.jar kan generere en rekkefølge på egenskapene i GML-Applikasjonsskjema som avviker fra rekkefølgen i UML-modellen. Denne feilen er rettet i nyere versjoner av ShapeChange.jar, og disse virker fortsatt med ShapeChangePlugin. Last ned nyeste versjon fra ShapeChange.net og pakk ut på en lokal katalog. Ved aktivering av ShapeChangePlugin må stien til den nye ShapeChange.jar lines inn på angitt sted:
 
-image::./IMG/ShapeChangeJarGammel.PNG[alt="Sti til gammel ShapeChange.jar-fil"]
+image::./IMG/ShapeChangeJarGammel.png[alt="Sti til gammel ShapeChange.jar-fil"]
 
 Lim inn stien til den nye versjonen på din egen lokale katalog:
 
-image::./IMG/ShapeChangeJarNy.PNG[alt="Sti til ny ShapeChange.jar-fil"]
+image::./IMG/ShapeChangeJarNy.png[alt="Sti til ny ShapeChange.jar-fil"]
 
 Dersom du ikke ser det viste feltet for innliming i din plugin så kan du ha en enda eldre versjon av ShapeChangePlugin og det kan være nødvendig å innstallere en nyere plugin. Det finnes en versjon av ShapeChangePlugin med det beskrevne utseende på følgende sti: + 
-https://register.geonorge.no/filer/uml-verkt%C3%B8y/shapechange-add-in-64-bit
+https://register.geonorge.no/filer/uml-verktøy/shapechange-add-in-64-bit
