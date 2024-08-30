@@ -1,0 +1,3 @@
+// Under bruk av ShapeChange plugin kommer det en feilmelding at fil "x" ikke finnes
+
+ShapeChange plugin lagrer en konfigurasjonsfil relativt ihht plasseringen av eap-filen. I tilfellet .eap-filen ligger på en nettverksdisk, kan det hende at plugin-en ikke kan lagre konfigurasjonsfila der det forsøkes å finne den igjen senere og dette forårsaker feilmeldingen. Flytt eap-filen til den lokale disken på pc-en din og start ShapeChange plugin på nytt.

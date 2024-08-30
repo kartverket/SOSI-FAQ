@@ -1,0 +1,3 @@
+// EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»
+
+Sjekk hvilken build av EA du har installert. Gå til Help → About EA, hvis build er 1008 eller lavere så anbefales det å installere en nyere versjon (1009 eller høyere).

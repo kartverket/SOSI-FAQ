@@ -1,0 +1,114 @@
+include::innledning.adoc[]
+
+== Enterprise Architect og SVN
+
+.Problemer med å åpne den forhåndskonfigurerte .eap prosjektfilen
+[%collapsible]
+====
+include::åpneKonfigurertFil.adoc[]
+====
+
+.Kan sjekke ut modeller, men ikke sjekke inn lokal versjon tilbake til serveren
+[%collapsible]
+====
+include::sjekkeInn.adoc[]
+====
+
+.Kan ikke sjekke ut en pakke og feilmeldingen sier "403 Forbidden"
+[%collapsible]
+====
+include::sjekkeUtForbidden.adoc[]
+====
+
+.Bruker får ikke sjekket ut pakker i modellregisteret fordi vedkommende er registrert med feil brukernavn (evt. standardbruker «sosi»)
+[%collapsible]
+====
+include::feilBrukernavn.adoc[]
+====
+
+.Diverse DAO-feilmeldinger i EA under «get all latest/get latest» av modellen
+[%collapsible]
+====
+include::getAllLatest.adoc[]
+====
+
+.Endringer som andre har utført i en pakke vises ikke hos meg. En oppdatering (Get Latest/Get All Latest) hjelper heller ikke
+[%collapsible]
+====
+include::oppdatering.adoc[]
+====
+
+.Ved utsjekk av en pakke kommer det en feilmelding som sier at pakken allerede er sjekket ut
+[%collapsible]
+====
+include::alleredeSjekketUt.adoc[]
+====
+
+.Feilmelding om at prosjektfilen ikke kan åpnes når du forsøker å åpne et eksisterende prosjekt i Enterprise Architect
+[%collapsible]
+====
+include::åpneProsjektFil.adoc[]
+====
+
+.EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»
+[%collapsible]
+====
+include::avhengighetsdiagrammer.adoc[]
+====
+
+.EA gir en feilmelding om at databasen har oppnådd maksimal størrelse
+[%collapsible]
+====
+include::maksimalStørrelse.adoc[]
+====
+
+.EA gir en feilmelding om at .xml fil "is not locked in this working copy" når du prøver å sjekke inn en pakke
+[%collapsible]
+====
+include::notLocked.adoc[]
+====
+
+.Samiske tegn vises ikke korrekt ved bruk av Enterprise Architect
+[%collapsible]
+====
+include::samiskeTegn.adoc[]
+====
+
+
+.EA gir en feilmelding hvor det står: "System resources exceeded"
+[%collapsible]
+====
+include::resourcesExceeded.adoc[]
+====
+
+.EA gir en feilmelding hvor det står: "File sharing lock count exceeded. Increase MaxLocksPerFile registry entry"
+[%collapsible]
+====
+include::maxLockPerFile.adoc[]
+====
+
+== ShapeChange
+
+.ShapeChange genererer feil rekkefølge på egenskapene i GML-Applikasjonsskjema
+[%collapsible]
+====
+include::feilRekkefølgeEgenskaper.adoc[]
+====
+
+.ShapeChange gir en feilmelding som sier "Premature end of file. (line 6, column 91)"
+[%collapsible]
+====
+include::prematureEOF.adoc[]
+====
+
+.Feilmelding under bruk av ShapeChangePlugin ifm. Java
+[%collapsible]
+====
+include::Java.adoc[]
+====
+
+.Under bruk av ShapeChange plugin kommer det en feilmelding at fil "x" ikke finnes
+[%collapsible]
+====
+include::filX.adoc[]
+====

@@ -1,0 +1,23 @@
+= FAQ - SVN
+
+== På denne siden finner du ofte stilte spørsmål og løsninger på kjente problemer ved bruk av Enterprise Architect og SVN.
+Hvis du opplever problemer som ikke dekkes her er det fint om du sender en tilbakemelding til standardiseringssekretariatet@kartverket.no +
+Legg ved en beskrivelse av hva du gjorde når feilen oppstod og gjerne et skjermbilde hvis mulig.
+
+
+=== For arbeid med modeller i SOSI-modellregister
+Den nye versjonen av Enterprise Architect EA16 kommer med mange store endringer. Den leveres som en ny EA16-64bit og en "legacy" EA16-32bit applikasjon. Den nye EA16-64bit har helt ny lokal lagring i en .qea-fil (SQLite), og .eap (MsAccess) kan ikke brukes. EA16-32bit kan inntil videre bruke både .qea og .eap. EA16 64bit og 32bit kan installeres og brukes samtidig. + 
+Installasjonsprosessen for EA15 med lenker til eldre versjoner av verktøy er beskrevet i en installasjonsveileder under http://sosi.geonorge.no/veiledere/ +
+For de som installerer EA16 64bit og 32bit har vi lagt ut nye Addins for SOSI model validation og Shapechange på stien https://sosi.geonorge.no/modelleringsverktøy/ +
+Det lages og legges ut en oppdatert (2024-08-26) .qea-fil for hele SOSI-modellregister på stien: https://sosi.geonorge.no/modellfiler/sosi_modellregister.qea
+
+
+Skjermbilder og beskrivelser er basert på EA versjon 13. Hvis du bruker versjon 12 eller eldre, finner du den gamle siden på https://sosi.geonorge.no/SVNFAQ/EA12.
+
+I stedet for å opprette en ny .eap fil, kan du  https://sosi.geonorge.no/SVNFAQ/EAP/SOSI_modellregister_JET40.eap[laste ned denne .eap filen (ca. 696MB)] som inneholder hele modellregisteret oppdatert 2022-05-30 kl. 10:00 med EA15, og jobbe videre med den som vanlig. Har du noe som er sjekket ut med en annen .eap-prosjektfil så husk å sjekke dette inn først.
+ 
+[WARNING] 
+====
+Noen brukere av den nedlastbare, forhåndskonfigurerte .eap-filen ovenfor har opplevd noe ventetid under arbeid med Enterprise Architect, spesielt når det gjelder kommunikasjon med SOSI-modellregister på SVN-serveren (feks. "Get Latest" på pakker). Dette har sannsynligvis sammenheng med størrelsen av prosjektfila. En workaround kan være å  https://sosi.geonorge.no/SVNFAQ/EAP/SOSI_modellregister_del_1_og_del_2_JET40.eapx[laste ned denne .eap-filen] som inneholder kun et utvalg av innholdet i SOSI-modellregister. Nærmere bestemt fullstendig innhold i SOSI del 1 (Generelle konsepter) og SOSI del 2 (Generell objektkatalog) samt pakkene på neste nivå under SOSI del 3 (Produktspesifikasjoner), men uten innhold i dem. + 
+Filen konfigureres http://sosi.geonorge.no/veiledere/installasjonsveileder/index.html#_bruke_forh%C3%A5ndskonfigurert_eap_fil_i_enterprise_architect[som beskrevet i veilederen]. Etterpå tar du "Get Latest" på en og en pakke langs den grenen i pakkestrukturen du vil jobbe i.
+====

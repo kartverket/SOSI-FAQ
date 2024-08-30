@@ -1,0 +1,5 @@
+// Diverse DAO-feilmeldinger i EA under «get all latest/get latest» av modellen
+
+Det dreier seg mest sannsynlig om en feil i den lokale EA-prosjektfila. + 
+I de aller fleste tilfellene hjelper det å begynne med en ny, tom prosjektfil hvor koblingen til SVN konfigureres på nytt og hele modellen lastes inn på nytt. + 
+Se også punkt 8. i http://kartverket.no/globalassets/standard/retningslinjer-og-veiledere/installasjon-av-nodvendig-programvare-for-arbeid-med-sosi-produktspesifikasjoner.pdf[installasjonsveilederen (.pdf)]

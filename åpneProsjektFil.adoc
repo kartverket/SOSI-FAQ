@@ -1,0 +1,11 @@
+// Feilmelding om at prosjektfilen ikke kan åpnes når du forsøker å åpne et eksisterende prosjekt i Enterprise Architect
+
+Brudd i nettverksforbindelsen har blitt påvist som årsak til at .eap-filen blir ødelagt. Spesielt i trådløse nettverk kan små brudd i nettverksforbindelsen oppstå uten at brukeren har noen kontroll på dette.
+
+I slike tilfeller kan prosjektfilen (.eap-filen) repareres slik at den kan gjenåpnes. Dette gjøres i EA-verktøyet «Configure -> Check Integrity –> Manage .EAP file -> Repair .EAP file». Det skal da bli mulig å gjenåpne prosjektet.
+
+I noen tilfeller vil det fortsatt ikke være mulig å oppdatere til/fra SVN. Du vil oppleve at oppdateringen mot modellregisteret blir hengende på samme sted. En restart av EA løser opp problemet, men du vil oppleve samme problematikken neste gang du forsøker å synkronisere mot modellregisteret i SVN. Dette skyldes at SVN ikke lenger har en konsistent versjon av ditt lokale modellregister for sammenligning mot det sentrale modellregisteret på SVN-serveren.
+
+Løsningen på dette er å opprette et nytt prosjekt i henhold til http://kartverket.no/globalassets/standard/retningslinjer-og-veiledere/installasjon-av-nodvendig-programvare-for-arbeid-med-sosi-produktspesifikasjoner.pdf[installasjonsveiledningen (.pdf)], og deretter kopiere over alle deler i applikasjonspakken (fra det ødelagte prosjektet) til det nye prosjektet.
+
+For å redusere faren for denne problematikken, anbefales det derfor å være koblet mot en stabil kablet nettverksforbindelse ved arbeid med informasjonsmodellen i Enterprise Architect.

@@ -1,0 +1,3 @@
+// Feilmelding under bruk av ShapeChangePlugin ifm. Java
+
+Installer en annen Java versjon. I utgangspunktet skal programvarene virke med den nyeste versjonen av Java. I noen tilfeller har vi likevel lagt merke til at det kan hjelpe å gå tilbake til en eldre versjon av Java. Helt konkret har det blitt testet med å gå tilbake fra versjon 7 til versjon 6.

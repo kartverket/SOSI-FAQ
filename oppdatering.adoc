@@ -1,0 +1,14 @@
+// Endringer som andre har utført i en pakke vises ikke hos meg. En oppdatering (Get Latest/Get All Latest) hjelper heller ikke
+
+Dette forekommer når den som har gjort endringer i en pakke har glemt å sjekke inn den aktuelle pakken, eller en overordnet pakke. +
+Hvem som har sjekket ut en pakke kan man se ved å høyreklikke på den aktuelle pakken og velge «Package Control → File Properties». +
+Bildene under viser en pakke som ikke er låst og en som er låst. Hvis du ser informasjonen som er i rød ramme så er pakken låst og må sjekkes inn av den som har låst den før du kan se endringer som er gjort i pakken.
+
+Eksempel på en pakke som ikke er låst:
+
+image::IMG/EA_packageNotLocked1.png[,, alt="Ikke låst"]
+
+
+Eksempel på en pakke som er låst av bruker "torejohnsen":
+
+image::IMG/EA_packageIsLocked1.png[,, alt="Låst"]

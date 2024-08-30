@@ -1,0 +1,5 @@
+// Problemer med å åpne den forhåndskonfigurerte .eap prosjektfilen
+
+For å få åpnet denne nye filen i Enterprise Architect må JET 4.0 være aktivert. Gå til "Start → Preferences". Huk av på "Use JET 4.0" og start deretter Enterprise Architect på nytt.
+
+Første gang du endrer til JET 4.0 bør du også legge inn en ny eap-startfil for at nye filer skal få JET 4.0 til å ta vare på alle tegn fra utf-8 (som samiske). For EA versjon 13 kan du kopiere denne filen: http://sosi.geonorge.no/SVNFAQ/EAP/EABase.eap[EABase.eap] til stien C:\Program Files (x86)\Sparx Systems\EA Den eap-startfila som kommer ved installaering av EA er for JET 3.5 som ikke har støtte for alle samiske tegn, og andre utf-8 tegn. Setting av JET40 og ny eap-startfil må gjøres kun en gang. 

@@ -1,0 +1,10 @@
+// ShapeChange gir en feilmelding som sier "Premature end of file. (line 6, column 91)"
+
+Feilmelding ser slik ut: 
+
+
+image::IMG/SC_PrematureEndOfFile.png[,, alt="Premature end of file"]
+
+For å løse dette problemet må du laste ned denne filen: https://sosi.geonorge.no/SVNFAQ/Files/StandardMapEntries.xml[StandardMapEntries.xml (høyre klikk og velg lagre som..)] + 
+Flytt så filen til stien C:\Program Files (x86)\Arkitektum AS\ShapeChange\config og velg å erstatte filen som ligger der fra før. +
+ShapeChange bør nå virke igjen i EA.
