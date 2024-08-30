@@ -42,11 +42,6 @@ include::oppdatering.adoc[]
 include::alleredeSjekketUt.adoc[]
 ====
 
-.Feilmelding om at prosjektfilen ikke kan åpnes når du forsøker å åpne et eksisterende prosjekt i Enterprise Architect
-[%collapsible]
-====
-include::åpneProsjektFil.adoc[]
-====
 
 .EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»
 [%collapsible]
@@ -68,6 +63,11 @@ include::samiskeTegn.adoc[]
 
 == Enterprise Architect 15 og eldre og SVN
 
+.Feilmelding om at prosjektfilen ikke kan åpnes når du forsøker å åpne et eksisterende prosjekt i Enterprise Architect
+[%collapsible]
+====
+include::åpneProsjektFil.adoc[]
+====
 .Problemer med å åpne den forhåndskonfigurerte .eap prosjektfilen
 [%collapsible]
 ====
