@@ -58,6 +58,9 @@ include::samiskeTegn.adoc[]
 
 == Enterprise Architect 15 og eldre og SVN
 
+[%collapsible]
+=====
+
 .EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»
 [%collapsible]
 ====
@@ -99,6 +102,8 @@ include::resourcesExceeded.adoc[]
 ====
 include::maxLockPerFile.adoc[]
 ====
+
+=====
 
 == ShapeChange
 
