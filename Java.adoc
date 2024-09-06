@@ -1,5 +1,6 @@
 // Feilmelding under bruk av ShapeChangePlugin ifm. Java
-Versjon 2024-08-30
+
+//Versjon 2024-08-30
 
 Oppgrader EA og installer nyeste ShapeChangeAddin hvis du har mulighet.
 

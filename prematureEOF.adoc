@@ -1,5 +1,6 @@
 // ShapeChange gir en feilmelding som sier "Premature end of file. (line 6, column 91)"
-Versjon 2024-08-30
+
+// Versjon 2024-08-30
 
 Feilmelding ser slik ut: 
 

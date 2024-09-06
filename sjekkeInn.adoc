@@ -1,15 +1,23 @@
 // Kan sjekke ut modeller, men ikke sjekke inn lokal versjon tilbake til serveren
 
+//Versjon 2024-09-05
+
 Feilmeldingen i EA vil se ut som på bildet under.
 
+image::IMG/EA_E175013_case1.png[,, alt="Feilmelding om feil URL"]
 
-image::IMG/EA_E175013_case1.png[,, alt="Feil URL"]
+Sannsynligvis finnes det en liten feil i URL-en. Den er case sensitive og bør se sånn ut: 
+*\https://sosi.geonorge.no/svn/SOSI* 
 
-Løsning: Sannsynligvis finnes det en liten feil i URL-en. Den er case sensitive og bør se sånn ut: 
-https://sosi.geonorge.no/svn/SOSI + 
-I dette tilfellet må URL’en som den lokale kopien av repository-et peker til tilpasses.
+////
+I dette tilfellet må URL-en som den lokale kopien av repositoryet peker til tilpasses.
 I kommandolinjeklienten går man til mappen som inneholder den lokale kopien.
-Der kan URL’en endres med ”svn relocate https://sosi.geonorge.no/svn/SOSI”, som vist på bildet under.
+Der kan URL’en endres med ``svn relocate \https://sosi.geonorge.no/svn/SOSI``, som vist på bildet under.
+////
 
+* Tilpass URL-en som peker til den lokale kopien av modellregisteret: 
 
-image::IMG/EA_relocate1.png[,, alt="SVN Relocate"]
+** åpne kommandolinjeklienten og gå til *C:\SOSI* (den lokale kopien av modellregisteret) 
+** utfør kommandoen ``svn relocate \https://sosi.geonorge.no/svn/SOSI`` 
+
+image::IMG/EA_relocate1.png[,, alt="Kommandolinjeklient SVN Relocate"]

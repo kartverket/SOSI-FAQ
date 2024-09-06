@@ -1,0 +1,53 @@
+== Enterprise Architect 15 og eldre
+.FAQs
+[%collapsible]
+=====
+
+.EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»
+[%collapsible]
+====
+include::avhengighetsdiagrammer.adoc[]
+====
+
+.Feilmelding om at prosjektfilen ikke kan åpnes når du forsøker å åpne et eksisterende prosjekt i Enterprise Architect
+[%collapsible]
+====
+include::åpneProsjektFil.adoc[]
+====
+.Problemer med å åpne den forhåndskonfigurerte .eap prosjektfilen
+[%collapsible]
+====
+include::åpneKonfigurertFil.adoc[]
+====
+
+.Diverse DAO-feilmeldinger i EA under «get all latest/get latest» av modellen
+[%collapsible]
+====
+include::getAllLatest.adoc[]
+====
+
+.EA gir en feilmelding om at databasen har oppnådd maksimal størrelse
+[%collapsible]
+====
+include::maksimalStørrelse.adoc[]
+====
+
+.EA gir en feilmelding hvor det står: "System resources exceeded"
+[%collapsible]
+====
+include::resourcesExceeded.adoc[]
+====
+
+.EA gir en feilmelding hvor det står: "File sharing lock count exceeded. Increase MaxLocksPerFile registry entry"
+[%collapsible]
+====
+include::maxLockPerFile.adoc[]
+====
+
+.Samiske tegn vises ikke korrekt ved bruk av Enterprise Architect v.15 og eldre
+[%collapsible]
+====
+include::samiskeTegnEA15.adoc[]
+====
+=====
+

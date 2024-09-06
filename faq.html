@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <title>FAQ - SVN</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -140,7 +140,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -162,6 +162,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -208,13 +209,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -330,7 +328,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -393,7 +391,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -441,59 +439,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>FAQ - SVN</h1>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Versjon 2024-09-06</p>
+</div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="_på_denne_siden_finner_du_ofte_stilte_spørsmål_og_løsninger_på_kjente_problemer_ved_bruk_av_enterprise_architect_og_svn">På denne siden finner du ofte stilte spørsmål og løsninger på kjente problemer ved bruk av Enterprise Architect og SVN.</h2>
+<h2 id="_her_finner_du_ofte_stilte_spørsmål_og_løsninger_på_kjente_problemer_ved_bruk_av_svn_og_enterprise_architect_v_16_og_nyere">Her finner du ofte stilte spørsmål og løsninger på kjente problemer ved bruk av SVN og Enterprise Architect v.16 og nyere.</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Hvis du opplever problemer som ikke dekkes her er det fint om du sender en tilbakemelding til <a href="mailto:standardiseringssekretariatet@kartverket.no">standardiseringssekretariatet@kartverket.no</a><br>
 Legg ved en beskrivelse av hva du gjorde når feilen oppstod og gjerne et skjermbilde hvis mulig.</p>
 </div>
-<div class="sect2">
-<h3 id="_for_arbeid_med_modeller_i_sosi_modellregister">For arbeid med modeller i SOSI-modellregister</h3>
-<div class="paragraph">
-<p>Den nye versjonen av Enterprise Architect EA16 kommer med mange store endringer. Den leveres som en ny EA16-64bit og en "legacy" EA16-32bit applikasjon. Den nye EA16-64bit har helt ny lokal lagring i en .qea-fil (SQLite), og .eap (MsAccess) kan ikke brukes. EA16-32bit kan inntil videre bruke både .qea og .eap. EA16 64bit og 32bit kan installeres og brukes samtidig.<br>
-Installasjonsprosessen for EA15 med lenker til eldre versjoner av verktøy er beskrevet i en installasjonsveileder under <a href="http://sosi.geonorge.no/veiledere/" class="bare">http://sosi.geonorge.no/veiledere/</a><br>
-For de som installerer EA16 64bit og 32bit har vi lagt ut nye Addins for SOSI model validation og Shapechange på stien <a href="https://sosi.geonorge.no/modelleringsverktøy/" class="bare">https://sosi.geonorge.no/modelleringsverktøy/</a><br>
-Det lages og legges ut en oppdatert (2024-08-26) .qea-fil for hele SOSI-modellregister på stien: <a href="https://sosi.geonorge.no/modellfiler/sosi_modellregister.qea" class="bare">https://sosi.geonorge.no/modellfiler/sosi_modellregister.qea</a></p>
-</div>
-<div class="paragraph">
-<p>Skjermbilder og beskrivelser er basert på EA versjon 13. Hvis du bruker versjon 12 eller eldre, finner du den gamle siden på <a href="https://sosi.geonorge.no/SVNFAQ/EA12" class="bare">https://sosi.geonorge.no/SVNFAQ/EA12</a>.</p>
-</div>
-<div class="paragraph">
-<p>I stedet for å opprette en ny .eap fil, kan du  <a href="https://sosi.geonorge.no/SVNFAQ/EAP/SOSI_modellregister_JET40.eap">laste ned denne .eap filen (ca. 696MB)</a> som inneholder hele modellregisteret oppdatert 2022-05-30 kl. 10:00 med EA15, og jobbe videre med den som vanlig. Har du noe som er sjekket ut med en annen .eap-prosjektfil så husk å sjekke dette inn først.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Warning</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Noen brukere av den nedlastbare, forhåndskonfigurerte .eap-filen ovenfor har opplevd noe ventetid under arbeid med Enterprise Architect, spesielt når det gjelder kommunikasjon med SOSI-modellregister på SVN-serveren (feks. "Get Latest" på pakker). Dette har sannsynligvis sammenheng med størrelsen av prosjektfila. En workaround kan være å  <a href="https://sosi.geonorge.no/SVNFAQ/EAP/SOSI_modellregister_del_1_og_del_2_JET40.eapx">laste ned denne .eap-filen</a> som inneholder kun et utvalg av innholdet i SOSI-modellregister. Nærmere bestemt fullstendig innhold i SOSI del 1 (Generelle konsepter) og SOSI del 2 (Generell objektkatalog) samt pakkene på neste nivå under SOSI del 3 (Produktspesifikasjoner), men uten innhold i dem.<br>
-Filen konfigureres <a href="http://sosi.geonorge.no/veiledere/installasjonsveileder/index.html#_bruke_forh%C3%A5ndskonfigurert_eap_fil_i_enterprise_architect">som beskrevet i veilederen</a>. Etterpå tar du "Get Latest" på en og en pakke langs den grenen i pakkestrukturen du vil jobbe i.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_enterprise_architect_og_svn">Enterprise Architect og SVN</h2>
+<h2 id="_enterprise_architect_16_og_nyere_og_svn">Enterprise Architect 16 og nyere og SVN</h2>
 <div class="sectionbody">
-<details>
-<summary class="title">Problemer med å åpne den forhåndskonfigurerte .eap prosjektfilen</summary>
-<div class="content">
-<div class="paragraph">
-<p>For å få åpnet denne nye filen i Enterprise Architect må JET 4.0 være aktivert. Gå til "Start → Preferences". Huk av på "Use JET 4.0" og start deretter Enterprise Architect på nytt.</p>
-</div>
-<div class="paragraph">
-<p>Første gang du endrer til JET 4.0 bør du også legge inn en ny eap-startfil for at nye filer skal få JET 4.0 til å ta vare på alle tegn fra utf-8 (som samiske). For EA versjon 13 kan du kopiere denne filen: <a href="http://sosi.geonorge.no/SVNFAQ/EAP/EABase.eap">EABase.eap</a> til stien C:\Program Files (x86)\Sparx Systems\EA Den eap-startfila som kommer ved installaering av EA er for JET 3.5 som ikke har støtte for alle samiske tegn, og andre utf-8 tegn. Setting av JET40 og ny eap-startfil må gjøres kun en gang.</p>
-</div>
-</div>
-</details>
 <details>
 <summary class="title">Kan sjekke ut modeller, men ikke sjekke inn lokal versjon tilbake til serveren</summary>
 <div class="content">
@@ -502,36 +466,51 @@ Filen konfigureres <a href="http://sosi.geonorge.no/veiledere/installasjonsveile
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/EA_E175013_case1.png" alt="Feil URL">
+<img src="IMG/EA_E175013_case1.png" alt="Feilmelding om feil URL">
 </div>
 </div>
 <div class="paragraph">
-<p>Løsning: Sannsynligvis finnes det en liten feil i URL-en. Den er case sensitive og bør se sånn ut:
-<a href="https://sosi.geonorge.no/svn/SOSI" class="bare">https://sosi.geonorge.no/svn/SOSI</a><br>
-I dette tilfellet må URL’en som den lokale kopien av repository-et peker til tilpasses.
-I kommandolinjeklienten går man til mappen som inneholder den lokale kopien.
-Der kan URL’en endres med ”svn relocate <a href="https://sosi.geonorge.no/svn/SOSI”" class="bare">https://sosi.geonorge.no/svn/SOSI”</a>, som vist på bildet under.</p>
+<p>Sannsynligvis finnes det en liten feil i URL-en. Den er case sensitive og bør se sånn ut:
+<strong>https://sosi.geonorge.no/svn/SOSI</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tilpass URL-en som peker til den lokale kopien av modellregisteret:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>åpne kommandolinjeklienten og gå til <strong>C:\SOSI</strong> (den lokale kopien av modellregisteret)</p>
+</li>
+<li>
+<p>utfør kommandoen <code>svn relocate https://sosi.geonorge.no/svn/SOSI</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/EA_relocate1.png" alt="SVN Relocate">
+<img src="IMG/EA_relocate1.png" alt="Kommandolinjeklient SVN Relocate">
 </div>
 </div>
 </div>
 </details>
 <details>
-<summary class="title">Kan ikke sjekke ut en pakke og feilmeldingen sier "403 Forbidden"</summary>
+<summary class="title">Kan ikke sjekke ut en pakke, og feilmeldingen sier "403 Forbidden"</summary>
 <div class="content">
 <div class="paragraph">
 <p>Feilmeldingen i EA vil se ut som på bildet under.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/leserettigheter1.png" alt="Kun leserettighet">
+<img src="./IMG/leserettigheter1.PNG" alt="Feilmelding fra EA">
 </div>
 </div>
 <div class="paragraph">
-<p>Vedkommende har da antakelig bare leserettigheter. Ta kontakt med Standardiseringssekretariatet (<a href="mailto:standardiseringssekretariatet@kartverket.no">standardiseringssekretariatet@kartverket.no</a>) og angi hvilket fagområde du er editor for eller hvilken produktspesifikasjon du vil jobbe med, så får du tildelt eget brukernavn og passord.</p>
+<p>Du har da antakelig bare leserettigheter til pakka.<br>
+For å få tilgang tar du kontakt med Standardiseringssekretariatet (<a href="mailto:standardiseringssekretariatet@kartverket.no">standardiseringssekretariatet@kartverket.no</a>) og angir hvilken pakke det gjelder. Oppgi også hvilket fagområde er du editor for eller hvilken produktspesifikasjon du vil jobbe med.</p>
 </div>
 </div>
 </details>
@@ -543,32 +522,43 @@ Der kan URL’en endres med ”svn relocate <a href="https://sosi.geonorge.no/sv
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/leserettigheter1.png" alt="Kun leserettighet">
+<img src="IMG/leserettigheter1.JPG" alt="Feilmelding Kun leserettighet">
 </div>
 </div>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
 <p>Bytt brukernavn i kommandoklienten som beskrevet nedenfor:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>åpne kommandolinjeklienten og gå til <strong>C:\SOSI</strong> (den lokale kopien av modellregisteret )</p>
+</li>
+<li>
+<p>skriv inn kommandoen <code>svn update --username 'ditt brukernavn'</code> (se eksempel nedenfor).</p>
+</li>
+<li>
+<p>oppgi passord.</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>For å endre brukernavnet må du åpne kommandolinjeklienten, gå til den lokale kopien av svn-repository (i veilederen er det C:\SOSI) og skriv inn kommando:
-«svn update --username 'ditt brukernavn'» (se eksempel nedenfor).<br>
-Så bør du få spørsmål om passord. Utover det trengs det ingen endringer i EA eller andre steder.<br>
-Prøv å sjekke ut en pakke for deretter å sjekke den inn igjen for å se om problemet er løst.</p>
+</li>
+</ul>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/EA_updateUsername1.png" alt="Bytte SVN brukernavn">
+<img src="IMG/EA_updateUsername1.png" alt="Kommandolinjeklienten. Bytte SVN brukernavn">
 </div>
 </div>
-</div>
-</details>
-<details>
-<summary class="title">Diverse DAO-feilmeldinger i EA under «get all latest/get latest» av modellen</summary>
-<div class="content">
 <div class="paragraph">
-<p>Det dreier seg mest sannsynlig om en feil i den lokale EA-prosjektfila.<br>
-I de aller fleste tilfellene hjelper det å begynne med en ny, tom prosjektfil hvor koblingen til SVN konfigureres på nytt og hele modellen lastes inn på nytt.<br>
-Se også punkt 8. i <a href="http://kartverket.no/globalassets/standard/retningslinjer-og-veiledere/installasjon-av-nodvendig-programvare-for-arbeid-med-sosi-produktspesifikasjoner.pdf">installasjonsveilederen (.pdf)</a></p>
+<p>Utover det trengs det ingen endringer i EA eller andre steder.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Prøv å sjekke ut en pakke for deretter å sjekke den inn igjen for å se om problemet er løst.</p>
+</li>
+</ul>
 </div>
 </div>
 </details>
@@ -576,25 +566,60 @@ Se også punkt 8. i <a href="http://kartverket.no/globalassets/standard/retnings
 <summary class="title">Endringer som andre har utført i en pakke vises ikke hos meg. En oppdatering (Get Latest/Get All Latest) hjelper heller ikke</summary>
 <div class="content">
 <div class="paragraph">
-<p>Dette forekommer når den som har gjort endringer i en pakke har glemt å sjekke inn den aktuelle pakken, eller en overordnet pakke.<br>
-Hvem som har sjekket ut en pakke kan man se ved å høyreklikke på den aktuelle pakken og velge «Package Control → File Properties».<br>
-Bildene under viser en pakke som ikke er låst og en som er låst. Hvis du ser informasjonen som er i rød ramme så er pakken låst og må sjekkes inn av den som har låst den før du kan se endringer som er gjort i pakken.</p>
+<p>Dette forekommer når den som har gjort endringer i en pakke har glemt å sjekke inn den aktuelle pakka, eller en overordnet pakke.</p>
 </div>
-<div class="paragraph">
-<p>Eksempel på en pakke som ikke er låst:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Undersøk hvem som har sjekket ut (låst) den aktuelle pakka</p>
+<div class="ulist">
+<ul>
+<li>
+<p>høyreklikk på pakka</p>
+</li>
+<li>
+<p>velg «Package Control → File Properties».</p>
+</li>
+<li>
+<p>sammenlign med eksemplene under</p>
+</li>
+</ul>
 </div>
+</li>
+</ul>
+</div>
+<details>
+<summary class="title">Se eksempel på en pakke som ikke er låst:</summary>
+<div class="content">
 <div class="imageblock">
 <div class="content">
 <img src="IMG/EA_packageNotLocked1.png" alt="Ikke låst">
 </div>
 </div>
-<div class="paragraph">
-<p>Eksempel på en pakke som er låst av bruker "torejohnsen":</p>
 </div>
+</details>
+<details>
+<summary class="title">Se eksempel på en pakke som er låst:</summary>
+<div class="content">
 <div class="imageblock">
 <div class="content">
 <img src="IMG/EA_packageIsLocked1.png" alt="Låst">
 </div>
+</div>
+<div class="paragraph">
+<p>Pakka er låst av bruker "torejohnsen":</p>
+</div>
+</div>
+</details>
+<div class="ulist">
+<ul>
+<li>
+<p>Nå må pakka sjekkes inn av den som har låst den</p>
+</li>
+<li>
+<p>Utfør «Get latest» på pakka for å se endringene</p>
+</li>
+</ul>
 </div>
 </div>
 </details>
@@ -607,48 +632,137 @@ Bildene under viser en pakke som ikke er låst og en som er låst. Hvis du ser i
 </div>
 </div>
 <div class="paragraph">
-<p>Pakken er låst av enten en annen bruker eller av vedkommende selv. Hvem som har låst pakken kan man se ved å velge «Package Control → File Properties …»</p>
+<p>Pakka er låst av enten en annen bruker eller av deg selv.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Finn ut hvem som har låst pakka og hvilken fil i modellregisteret den er knyttet til</p>
+<div class="ulist">
+<ul>
+<li>
+<p>velg «Package Control → File Properties …»</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Feltet "Relative URL" viser hvilken xml-fil pakka er knyttet til</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Hvis pakken er sjekket ut til deg, men ikonet på pakken antyder at den ikke er sjekket ut kan du først prøve å høyreklikke på pakken, gå på Package Control og velge Re-synch Status With VC Provider</p>
+<p>Hvis pakka er sjekket ut til deg, men ikonet på pakka antyder at den ikke er sjekket ut kan du først prøve dette:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>velg Package Control og «Re-synch Status With VC Provider»</p>
+</li>
+</ul>
+</div>
+<details>
+<summary class="title">Se skjermbilde for å utføre Re-synch Status With VC Provider</summary>
+<div class="content">
 <div class="imageblock">
 <div class="content">
 <img src="IMG/EA_Synch.png" alt="Force lock">
 </div>
 </div>
+</div>
+</details>
 <div class="paragraph">
-<p>Hvis løsning over ikke virker må du følge oppskriften under.</p>
+<p>Hvis løsningen over ikke virker, må du fortsette med oppskriften under.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hvis pakken er låst av en annen bruker:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>avklar om  vedkommende fortsatt jobber med pakka og når den kan frigis etter oppdatering</p>
+</li>
+<li>
+<p>ta evt. kontakt med administrator hvis det går lang tid uten avklaring</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>NB! Dobbeltsjekk at det er du som har låst pakken før du overstyrer låsen.<br>
-Hvis pakken er låst av en annen bruker så jobber vedkommende mest sannsynlig med pakkeinnholdet og frigir pakken etter at den er blitt ferdig oppdatert.<br>
-Er en pakke låst over lengre tid (&gt;= 1 døgn) anbefales det å ta kontakt med administrator eller direkte med den som har låst pakka.<br>
-Hvis pakken er låst til deg, eller du har fått tillatelse fra den som har låst pakken, så kan låsen fjernes i kommandolinjeklienten.<br>
-En låst pakke kan overstyres ved å bruke kommando "svn lock 'filnavn' --force" (se eksempel på bildet under).</p>
+<p><strong>NB! Dobbeltsjekk at det er du som har låst pakken før du overstyrer låsen.</strong></p>
+</div>
+<details>
+<summary class="title">Fjern låsen ved hjelp av kommandolinjeklienten</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Start kommandolinjeklienten og gå dit xml-filen befinner seg.</p>
+</li>
+<li>
+<p>Overta låsen ved å bruke kommandoen <code>svn lock 'filnavn' --force</code> (se eksempel under).</p>
+</li>
+<li>
+<p>Lås opp ved å bruke kommandoen <code>svn unlock 'filnavn'</code> (se eksempel under)</p>
+</li>
+</ul>
+</div>
+<details>
+<summary class="title">Se skjermbilder for å bruke svn fra kommandolinjeklienten</summary>
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="IMG/EA_lock1.png" alt="Force lock i kommandolinjeklienten">
+</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/EA_lock1.png" alt="Force lock">
+<img src="IMG/EA_unlock1.png" alt="Force unlock i kommandolinjeklienten">
 </div>
 </div>
+</div>
+</details>
+</div>
+</details>
 <div class="paragraph">
-<p>Hvor fila ligger finner du ut ved å høyreklikke på pakken i EA, så velger du «Package Control → Configure». Feltet «XMI Filename» viser lagringsstedet for filen.<br>
-Etterpå kjører du kommando «svn unlock 'filnavn'» (se eksempel på bildet under).</p>
+<p>eller</p>
 </div>
-<div class="imageblock">
+<details>
+<summary class="title">Fjern låsen ved hjelp av Tortoise klienten.</summary>
 <div class="content">
-<img src="IMG/EA_unlock1.png" alt="Force unlock">
-</div>
-</div>
 <div class="paragraph">
-<p>Pakken kan nå sjekkes ut på vanlig måte i EA.</p>
+<p>Tortoise-klienten forutsettes installert ihht gjeldende installsjonsveileder. Den kan lastes ned fra <a href="http://tortoisesvn.net/downloads.html" class="bare">http://tortoisesvn.net/downloads.html</a></p>
 </div>
-<div class="paragraph">
-<p>Alternativt kan dette gjøres ved hjelp av Tortoise klienten i utforskeren.<br>
-Tortoise-klienten kan lastes ned fra <a href="http://tortoisesvn.net/downloads.html" class="bare">http://tortoisesvn.net/downloads.html</a><br>
-Gå til den lokale kopien av SVN-repository-et. Høyreklikk på xml-fila som det gjelder og velg «SVN Get lock», kryss deretter av på ”Steal the locks” for å låse med egen konto (se eksempel på bildene under).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Lokaliser den aktuelle xml-filen i filbehandleren</p>
+</li>
+<li>
+<p>Overta låsen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>høyreklikk på xml-filen og velg «SVN Get lock»</p>
+</li>
+<li>
+<p>kryss av på ”Steal the locks” for å låse med egen konto (se eksempel på bildene under).</p>
+</li>
+</ul>
 </div>
+</li>
+</ul>
+</div>
+<details>
+<summary class="title">Se skjermbilder for å overta låsen i Tortoise-klienten</summary>
+<div class="content">
 <div class="imageblock">
 <div class="content">
 <img src="IMG/tortoise1.JPG" alt="Tortoise">
@@ -659,8 +773,197 @@ Gå til den lokale kopien av SVN-repository-et. Høyreklikk på xml-fila som det
 <img src="IMG/tortoise2.JPG" alt="Tortoise">
 </div>
 </div>
+</div>
+</details>
+<div class="ulist">
+<ul>
+<li>
+<p>Lås opp pakka</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Høyreklikk på xml-filen og velg «TortoiseSVN</p>
+</li>
+<li>
+<p>Velg Release lock” for å fjerne låsingen.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<div class="ulist">
+<ul>
+<li>
+<p>Pakka kan nå sjekkes ut på vanlig måte i EA.</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">EA gir en feilmelding om at .xml fil "is not locked in this working copy" når du prøver å sjekke inn en pakke</summary>
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="IMG/EA_E195013_workingCopy1.png" alt="Not locked working copy">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Gå til den lokale mappen som inneholder kopien av modellregisteret.</p>
+</li>
+<li>
+<p>Høyreklikk på den aktuelle .xml-filen og velg "SVN Get Lock&#8230;&#8203;" (som vist på bildet under).<br></p>
+</li>
+<li>
+<p>Huk av på "Steal the locks" og trykk OK.</p>
+</li>
+<li>
+<p>Nå kan du prøve å sjekke inn pakken i EA.</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>Så høyreklikker du på den aktuelle filen igjen og velger «TortoiseSVN → Release lock” for å fjerne låsingen.</p>
+<p>Hvis du er usikker på hvor du finner filen, høyreklikk på den aktuelle pakken i EA og velg "Package Control → Configure&#8230;&#8203;"<br>
+Der kan man se hvor filen ligger i den lokale mappen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="IMG/svngetlock1.JPG" alt="Not locked working copy">
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Samiske tegn vises ikke korrekt ved bruk av Enterprise Architect</summary>
+<div class="content">
+<div class="paragraph">
+<p>Enterprise Architect bruker i utgangspunktet windows-1252 tegnsett ved lagring av XMI-fil til SOSI-modellregister.
+Dette tegnsettet har ikke støtte for alle samiske tegn.</p>
+</div>
+<div class="paragraph">
+<p>For at Enterprise Architect skal bruke UTF-8 tegnsett må man gjøre noen grep:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Gå til "Start → Preferences"</p>
+</li>
+<li>
+<p>Velg "XML Specifications" i menyen.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Skriv inn 'utf-8' i feltet for "Code Page"</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<details>
+<summary class="title">Skjermbilde for å endre tegnsett til URTF-8</summary>
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="IMG/EA_preferencesUTF81.png" alt="UTF-8">
+</div>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Samiske tegn skal nå vises korrekt. Hvis ikke, er det mulig du må legge dem inn på nytt, eller hente en eldre versjon av pakka fra før tegnsettfeilen oppsto.</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_shapechange">ShapeChange</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">ShapeChange genererer feil rekkefølge på egenskapene i GML-Applikasjonsskjema</summary>
+<div class="content">
+<div class="paragraph">
+<p>ShapeChangePlugin blir vanligvis installert med en veldig tidlig versjon av ShapeChange.jar inkludert. Den versjonen av ShapeChange.jar kan generere en rekkefølge på egenskapene i GML-Applikasjonsskjema som avviker fra rekkefølgen i UML-modellen. Denne feilen er rettet i nyere versjoner av ShapeChange.jar, og disse virker fortsatt med ShapeChangePlugin.</p>
+</div>
+<div class="paragraph">
+<p>Last ned nyeste versjon fra ShapeChange.net og pakk ut på en lokal katalog. Ved aktivering av ShapeChangePlugin må stien til den nye ShapeChange.jar lies inn på angitt sted:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./IMG/ShapeChangeJarGammel.png" alt="Sti til gammel ShapeChange.jar-fil">
+</div>
+</div>
+<div class="paragraph">
+<p>Lim inn stien til den nye versjonen på din egen lokale katalog:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./IMG/ShapeChangeJarNy.png" alt="Sti til ny ShapeChange.jar-fil">
+</div>
+</div>
+<div class="paragraph">
+<p>Dersom du ikke ser det viste feltet for innliming i din plugin så kan du ha en enda eldre versjon av ShapeChangePlugin og det kan være nødvendig å innstallere en nyere plugin. Det finnes en ny versjon av ShapeChangePlugin følgende sti:<br>
+<a href="https://register.geonorge.no/filer/uml-verktøy/shapechange-add-in-64-bit" class="bare">https://register.geonorge.no/filer/uml-verktøy/shapechange-add-in-64-bit</a></p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ShapeChange gir en feilmelding som sier "Premature end of file. (line 6, column 91)"</summary>
+<div class="content">
+<div class="paragraph">
+<p>Feilmelding ser slik ut:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="IMG/SC_PrematureEndOfFile.PNG" alt="Premature end of file">
+</div>
+</div>
+<div class="paragraph">
+<p>For å løse dette problemet må du laste ned denne filen: <a href="https://sosi.geonorge.no/SVNFAQ/Files/StandardMapEntries.xml">StandardMapEntries.xml (høyre klikk og velg lagre som..)</a><br>
+Flytt så filen til stien C:\Program Files (x86)\Arkitektum AS\ShapeChange\config og velg å erstatte filen som ligger der fra før.<br>
+ShapeChange bør nå virke igjen i EA.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Feilmelding under bruk av ShapeChangePlugin ifm. Java</summary>
+<div class="content">
+<div class="paragraph">
+<p>Oppgrader EA og installer nyeste ShapeChangeAddin hvis du har mulighet.</p>
+</div>
+<div class="paragraph">
+<p>Eldre versjoner av ShapeChangePlugin hadde ikke Java innebygget.<br>
+Installer da en annen Java versjon. I utgangspunktet skal programvarene virke med den nyeste versjonen av Java. I noen tilfeller har vi likevel lagt merke til at det kan hjelpe å gå tilbake til en eldre versjon av Java. Helt konkret har det blitt testet med å gå tilbake fra versjon 7 til versjon 6.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Under bruk av ShapeChange plugin kommer det en feilmelding at fil "x" ikke finnes</summary>
+<div class="content">
+<div class="paragraph">
+<p>ShapeChange plugin lagrer en konfigurasjonsfil relativt ihht plasseringen av eap-filen. I tilfellet .eap-filen ligger på en nettverksdisk, kan det hende at plugin-en ikke kan lagre konfigurasjonsfila der det forsøkes å finne den igjen senere og dette forårsaker feilmeldingen. Flytt eap-filen til den lokale disken på pc-en din og start ShapeChange plugin på nytt.</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enterprise_architect_15_og_eldre">Enterprise Architect 15 og eldre</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">FAQs</summary>
+<div class="content">
+<details>
+<summary class="title">EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»</summary>
+<div class="content">
+<div class="paragraph">
+<p>Sjekk hvilken build av EA du har installert. Gå til Help → About EA, hvis build er 1008 eller lavere så anbefales det å installere en nyere versjon (1009 eller høyere).</p>
 </div>
 </div>
 </details>
@@ -685,10 +988,23 @@ Gå til den lokale kopien av SVN-repository-et. Høyreklikk på xml-fila som det
 </div>
 </details>
 <details>
-<summary class="title">EA tar ikke med relasjonene i avhengighetsdiagrammer og det hjelper ikke å kjøre «get latest/get all latest»</summary>
+<summary class="title">Problemer med å åpne den forhåndskonfigurerte .eap prosjektfilen</summary>
 <div class="content">
 <div class="paragraph">
-<p>Sjekk hvilken build av EA du har installert. Gå til Help → About EA, hvis build er 1008 eller lavere så anbefales det å installere en nyere versjon (1009 eller høyere).</p>
+<p>For å få åpnet denne nye filen i Enterprise Architect må JET 4.0 være aktivert. Gå til "Start → Preferences". Huk av på "Use JET 4.0" og start deretter Enterprise Architect på nytt.</p>
+</div>
+<div class="paragraph">
+<p>Første gang du endrer til JET 4.0 bør du også legge inn en ny eap-startfil for at nye filer skal få JET 4.0 til å ta vare på alle tegn fra utf-8 (som samiske). For EA versjon 13 kan du kopiere denne filen: <a href="http://sosi.geonorge.no/SVNFAQ/EAP/EABase.eap">EABase.eap</a> til stien C:\Program Files (x86)\Sparx Systems\EA Den eap-startfila som kommer ved installaering av EA er for JET 3.5 som ikke har støtte for alle samiske tegn, og andre utf-8 tegn. Setting av JET40 og ny eap-startfil må gjøres kun en gang.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Diverse DAO-feilmeldinger i EA under «get all latest/get latest» av modellen</summary>
+<div class="content">
+<div class="paragraph">
+<p>Det dreier seg mest sannsynlig om en feil i den lokale EA-prosjektfila.<br>
+I de aller fleste tilfellene hjelper det å begynne med en ny, tom prosjektfil hvor koblingen til SVN konfigureres på nytt og hele modellen lastes inn på nytt.<br>
+Se også punkt 8. i <a href="http://kartverket.no/globalassets/standard/retningslinjer-og-veiledere/installasjon-av-nodvendig-programvare-for-arbeid-med-sosi-produktspesifikasjoner.pdf">installasjonsveilederen (.pdf)</a></p>
 </div>
 </div>
 </details>
@@ -710,68 +1026,6 @@ Velg prosjektfilen og klikk deretter på “Open”.</p>
 <div class="content">
 <img src="IMG/EA_compact2.png" alt="Compact">
 </div>
-</div>
-</div>
-</details>
-<details>
-<summary class="title">EA gir en feilmelding om at .xml fil "is not locked in this working copy" når du prøver å sjekke inn en pakke</summary>
-<div class="content">
-<div class="imageblock">
-<div class="content">
-<img src="IMG/EA_E195013_workingCopy1.png" alt="Not locked working copy">
-</div>
-</div>
-<div class="paragraph">
-<p>For å løse dette problemet anbefaler vi at du har installert TortoiseSVN, som kan lastes ned fra <a href="http://tortoisesvn.net/downloads.html" class="bare">http://tortoisesvn.net/downloads.html</a>.<br>
-Gå til den lokale mappen som inneholder kopien av modellregisteret. Høyre klikk på den aktuelle .xml filen og velg "SVN Get Lock&#8230;&#8203;" (som vist på bildet under).<br>
-Huk deretter av på "Steal the locks" og trykk OK. Nå kan du prøve å sjekke inn pakken i EA.</p>
-</div>
-<div class="paragraph">
-<p>Hvis du er usikker på hvor du finner filen, høyreklikk på den aktuelle pakken i EA og velg "Package Control → Configure&#8230;&#8203;"<br>
-Der kan man se hvor filen ligger i den lokale mappen.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="IMG/svngetlock1.JPG" alt="Not locked working copy">
-</div>
-</div>
-</div>
-</details>
-<details>
-<summary class="title">Samiske tegn vises ikke korrekt ved bruk av Enterprise Architect</summary>
-<div class="content">
-<div class="paragraph">
-<p>Enterprise Architect bruker windows-1252 tegnsett som ikke har full støtte for alle Samiske tegn.<br>
-For at Enterprise Architect skal bruke UTF-8 tegnsett må man gjøre noen grep.</p>
-</div>
-<div class="paragraph">
-<p>Gå til "Start → Preferences". Huk av på "Use JET 4.0" som vist på bildet under.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="IMG/EA_preferencesJET402.png" alt="JET 4.0">
-</div>
-</div>
-<div class="paragraph">
-<p>Deretter klikker du på valget "XML Specifications" i menyen. Skriv inn 'utf-8' i feltet for "Code Page", som vist på bildet under.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="IMG/EA_preferencesUTF81.png" alt="UTF-8">
-</div>
-</div>
-<div class="paragraph">
-<p>Start deretter EA på nytt for at de nye instillingene skal tre i kraft.</p>
-</div>
-<div class="paragraph">
-<p>Last deretter ned <a href="http://sosi.geonorge.no/SVNFAQ/EAP/SOSI_modellregister_JET40.eap">denne .EAP filen</a>. (høyreklikk og velg "Lagre linken som&#8230;&#8203; / Save target as&#8230;&#8203;")
-Dette er en .EAP fil med hele SOSI-modellregisteret (oppdatert 08.10.2020).</p>
-</div>
-<div class="paragraph">
-<p>Åpne denne .EAP filen i Enterprise Architect og kjør "Get all latest". Du kan nå bruke denne .EAP filen for videre arbeid mot modellregisteret.</p>
-</div>
-<div class="paragraph">
-<p>Samiske tegn vil nå vises korrekt. Samiske tegn som allerede er lagret ukorrekt må legges inn på nytt med denne .EAP filen.</p>
 </div>
 </div>
 </details>
@@ -822,68 +1076,48 @@ Etter dette må du restarte PC&#8217;en for at endringene skal tre i kraft.</p>
 </div>
 </div>
 </details>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_shapechange">ShapeChange</h2>
-<div class="sectionbody">
 <details>
-<summary class="title">ShapeChange genererer feil rekkefølge på egenskapene i GML-Applikasjonsskjema</summary>
+<summary class="title">Samiske tegn vises ikke korrekt ved bruk av Enterprise Architect v.15 og eldre</summary>
 <div class="content">
 <div class="paragraph">
-<p>ShapeChangePlugin blir vanligvis installert med en veldig tidlig versjon av ShapeChange.jar inkludert. Den versjonen av ShapeChange.jar kan generere en rekkefølge på egenskapene i GML-Applikasjonsskjema som avviker fra rekkefølgen i UML-modellen. Denne feilen er rettet i nyere versjoner av ShapeChange.jar, og disse virker fortsatt med ShapeChangePlugin. Last ned nyeste versjon fra ShapeChange.net og pakk ut på en lokal katalog. Ved aktivering av ShapeChangePlugin må stien til den nye ShapeChange.jar lines inn på angitt sted:</p>
+<p>Enterprise Architect bruker i utgangspunktet windows-1252 tegnsett ved lagring av XMI-fil til SOSI-modellregister.<br>
+Dette tegnsettet har ikke støtte for alle Samiske tegn.<br>
+For at Enterprise Architect skal bruke UTF-8 tegnsett må man gjøre noen grep.</p>
+</div>
+<div class="paragraph">
+<p>Hvis du har EA15 eller eldre; gå til "Start → Preferences". Huk av på "Use JET 4.0" som vist på bildet under.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/ShapeChangeJarGammel.PNG" alt="Sti til gammel ShapeChange.jar-fil">
+<img src="IMG/EA_preferencesJET402.png" alt="JET 4.0">
 </div>
 </div>
 <div class="paragraph">
-<p>Lim inn stien til den nye versjonen på din egen lokale katalog:</p>
+<p>Deretter klikker du på valget "XML Specifications" i menyen. Skriv inn 'utf-8' i feltet for "Code Page", som vist på bildet under.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="IMG/ShapeChangeJarNy.PNG" alt="Sti til ny ShapeChange.jar-fil">
+<img src="IMG/EA_preferencesUTF81.png" alt="UTF-8">
 </div>
 </div>
 <div class="paragraph">
-<p>Dersom du ikke ser det viste feltet for innliming i din plugin så kan du ha en enda eldre versjon av ShapeChangePlugin og det kan være nødvendig å innstallere en nyere plugin. Det finnes en versjon av ShapeChangePlugin med det beskrevne utseende på følgende sti:<br>
-<a href="https://www.arkitektum.no/files/sosi/SOSI-plugin/releases/latest" class="bare">https://www.arkitektum.no/files/sosi/SOSI-plugin/releases/latest</a></p>
+<p>Start deretter EA på nytt for at de nye instillingene skal tre i kraft.</p>
+</div>
+<div class="paragraph">
+<p>Last deretter ned <a href="http://sosi.geonorge.no/SVNFAQ/EAP/SOSI_modellregister_JET40.eap">denne .EAP filen</a>. (høyreklikk og velg "Lagre linken som&#8230;&#8203; / Save target as&#8230;&#8203;")
+Dette er en .EAP fil med hele SOSI-modellregisteret (oppdatert 08.10.2020).</p>
+</div>
+<div class="paragraph">
+<p>Åpne denne .EAP filen i Enterprise Architect og kjør "Get all latest". Du kan nå bruke denne .EAP filen for videre arbeid mot modellregisteret.</p>
+</div>
+<div class="paragraph">
+<p>Samiske tegn vil nå vises korrekt. Samiske tegn som allerede er lagret ukorrekt må legges inn på nytt med denne .EAP filen.</p>
+</div>
+<div class="paragraph">
+<p>Samiske tegn skal nå vises korrekt. Hvis ikke er det mulig du må hente en eldre versjon av pakka fra før tegnsettfeilen oppsto.</p>
 </div>
 </div>
 </details>
-<details>
-<summary class="title">ShapeChange gir en feilmelding som sier "Premature end of file. (line 6, column 91)"</summary>
-<div class="content">
-<div class="paragraph">
-<p>Feilmelding ser slik ut:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="IMG/SC_PrematureEndOfFile.png" alt="Premature end of file">
-</div>
-</div>
-<div class="paragraph">
-<p>For å løse dette problemet må du laste ned denne filen: <a href="https://sosi.geonorge.no/SVNFAQ/Files/StandardMapEntries.xml">StandardMapEntries.xml (høyre klikk og velg lagre som..)</a><br>
-Flytt så filen til stien C:\Program Files (x86)\Arkitektum AS\ShapeChange\config og velg å erstatte filen som ligger der fra før.<br>
-ShapeChange bør nå virke igjen i EA.</p>
-</div>
-</div>
-</details>
-<details>
-<summary class="title">Feilmelding under bruk av ShapeChangePlugin ifm. Java</summary>
-<div class="content">
-<div class="paragraph">
-<p>Installer en annen Java versjon. I utgangspunktet skal programvarene virke med den nyeste versjonen av Java. I noen tilfeller har vi likevel lagt merke til at det kan hjelpe å gå tilbake til en eldre versjon av Java. Helt konkret har det blitt testet med å gå tilbake fra versjon 7 til versjon 6.</p>
-</div>
-</div>
-</details>
-<details>
-<summary class="title">Under bruk av ShapeChange plugin kommer det en feilmelding at fil "x" ikke finnes</summary>
-<div class="content">
-<div class="paragraph">
-<p>ShapeChange plugin lagrer en konfigurasjonsfil relativt ihht plasseringen av eap-filen. I tilfellet .eap-filen ligger på en nettverksdisk, kan det hende at plugin-en ikke kan lagre konfigurasjonsfila der det forsøkes å finne den igjen senere og dette forårsaker feilmeldingen. Flytt eap-filen til den lokale disken på pc-en din og start ShapeChange plugin på nytt.</p>
-</div>
 </div>
 </details>
 </div>
@@ -891,7 +1125,7 @@ ShapeChange bør nå virke igjen i EA.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-08-29 13:46:49 +0200
+Last updated 2024-09-06 09:45:12 +0200
 </div>
 </div>
 </body>
